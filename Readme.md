@@ -9,13 +9,11 @@
 1. Fernando Rodríguez
    - Fernan1590@gmail.com
 2. Juan Sebastián Franco
-   - @email
-3. Alejandro Expósito Verdu
-   - @email
+   - @franxeszian@gmail.com
 4. Akram Allooui
    - @email
 5. Cristian Sanchez
-   - @email
+   - @criistan11sm@gmail.com
 
 ## Tareas para el desarrollo del proyecto
 
