@@ -20,6 +20,15 @@
 ## Tareas para el desarrollo del proyecto
 
 
-## Asignación de tareas
+## Reparto de tareas
 
+### Fernando Rodríguez
+
+### Juan Sebastián Franco
+
+### Alejandro Expósito
+
+### Akram Alloui
+
+### Cristian Sanchez
 
