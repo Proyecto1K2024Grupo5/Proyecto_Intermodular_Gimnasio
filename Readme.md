@@ -11,7 +11,7 @@
 2. Juan Sebastián Franco
    - franxeszian@gmail.com
 4. Akram Allooui
-   - @email
+   - akrall@alu.edu.gva.es
 5. Cristian Sanchez
    - criistan11sm@gmail.com
 
