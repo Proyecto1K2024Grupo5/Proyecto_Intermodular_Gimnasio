@@ -42,7 +42,7 @@ El gimnasio dispone de varias salas que se utilizan para dar las clases dirigida
 sola actividad. De cada sala queremos saber su número, la clase que se va a realizar en ella y el aforo máximo 
 de clientes. De las clases dirigidas que se dan en las salas, queremos saber su hora de inicio, la fecha, el nombre 
 del monitor que la da, la sala en la que se realiza, el número de plazas disponible y la duración, y el cliente podrá
-reservar una clase como máximo hasta 15 minutos antes de que esta empiece. Además de estas salas, también hay una 
+reservar una clase como máximo hasta 15 minutos antes de que esta empiece y 15 para cancelarla. Además de estas salas, también hay una 
 gran sala donde están las máquinas de musculación para entrenar libremente. Para poder acceder
 a esta sala no será necesario realizar ningún tipo de reserva. Los trabajadores del gimnasio se dividen entre 
 supervisores de sala (que son las personas encargadas de supervisar la sala de máquinas), y los monitores de las 
