@@ -10,7 +10,7 @@
    - Fernan1590@gmail.com
 2. Juan Sebastián Franco
    - francosebastianjc@gmail.com
-4. Akram Allooui
+4. Akram Allaoui
    - akrall@alu.edu.gva.es
 5. Cristian Sanchez
    - criistan11sm@gmail.com
@@ -24,7 +24,7 @@
 
 ### Juan Sebastián Franco
 
-### Akram Alloui
+### Akram Allaoui
 
 ### Cristian Sanchez
 
