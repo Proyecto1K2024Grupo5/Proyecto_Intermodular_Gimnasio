@@ -35,14 +35,14 @@ Se desea conocer el número de clientes que están inscritos. De cada cliente se
 su dirección, su documento de identidad, su correo electrónico, su fecha de nacimiento y su número de usuario. Una vez 
 el cliente haya pagado por primera vez una de las tres membresías que posee el gimnasio, las cuales son 
 (Gold, Silver y Bronze), se le entregara una pulsera identificativa con la que podrá acceder al gimnasio, y dentro 
-de el a las clases dirigidas. El usuario también deberá descargarse una aplicación con la cual podrá apuntarse a las 
+de el, a las clases dirigidas. El usuario también deberá descargarse una aplicación con la cual podrá apuntarse a las 
 clases dirigidas que ofrece el gimnasio. El cliente podrá apuntarse a todas las clases que quiera 
 durante el día, (dependiendo de la membresía que haya pagado) pero nunca podrá apuntarse a dos clases a la misma hora. 
 El gimnasio dispone de varias salas que se utilizan para dar las clases dirigidas. Cada sala puede dar una 
 sola actividad. De cada sala queremos saber su número, la clase que se va a realizar en ella y el aforo máximo 
 de clientes. De las clases dirigidas que se dan en las salas, queremos saber su hora de inicio, la fecha, el nombre 
 del monitor que la da, la sala en la que se realiza, el número de plazas disponible y la duración, y el cliente podrá
-reservar una clas como máximo hasta 15 minutos antes de que esta empiece. Además de estas salas, también hay una 
+reservar una clase como máximo hasta 15 minutos antes de que esta empiece. Además de estas salas, también hay una 
 gran sala donde están las máquinas de musculación para entrenar libremente. Para poder acceder
 a esta sala no será necesario realizar ningún tipo de reserva. Los trabajadores del gimnasio se dividen entre 
 supervisores de sala (que son las personas encargadas de supervisar la sala de máquinas), y los monitores de las 
