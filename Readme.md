@@ -9,7 +9,7 @@
 1. Fernando Rodríguez
    - Fernan1590@gmail.com
 2. Juan Sebastián Franco
-   - franxeszian@gmail.com
+   - francosebastianjc@gmail.com
 4. Akram Allooui
    - akrall@alu.edu.gva.es
 5. Cristian Sanchez
