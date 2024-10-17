@@ -48,6 +48,6 @@ supervisores de sala (que son las personas encargadas de supervisar la sala de m
 clases dirigidas. Son puestos de trabajo diferentes, por lo que uno no puede realizar el trabajo del otro ni al revés.**
 
 # Modelo de la Entidad Relación
-![IMG_5818.jpg](Imagenes/IMG_5818.jpg)
+![IMG_5819.jpg](Imagenes/IMG_5819.jpg)
 
 ![er.png](Imagenes/er.png)
