@@ -46,3 +46,8 @@ reservar una clase como máximo hasta 15 minutos antes de que esta empiece y 15 
 gran sala donde están las máquinas de musculación. Los trabajadores del gimnasio se dividen entre 
 supervisores de sala (que son las personas encargadas de supervisar la sala de máquinas), y los monitores de las 
 clases dirigidas. Son puestos de trabajo diferentes, por lo que uno no puede realizar el trabajo del otro ni al revés.**
+
+# Modelo de la Entidad Relación
+![IMG_5818.jpg](Imagenes/IMG_5818.jpg)
+
+![er.png](Imagenes/er.png)
