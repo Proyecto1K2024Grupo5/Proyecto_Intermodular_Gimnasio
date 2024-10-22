@@ -1,5 +1,5 @@
 # Documentación proyecto intermodular
-##**Miembros del grupo**
+## Miembros del grupo
 1. Fernando Rodríguez
    - Fernan1590@gmail.com
 2. Juan Sebastián Franco
