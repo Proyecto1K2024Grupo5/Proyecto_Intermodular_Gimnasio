@@ -3,7 +3,7 @@
 1. Fernando Rodríguez
    - Fernan1590@gmail.com
 2. Juan Sebastián Franco
-   - francosebastianjc@gmail.com
+   - https://github.com/ZianFranxes
 4. Akram Allaoui
    - akrall@alu.edu.gva.es
 5. Cristian Sanchez
