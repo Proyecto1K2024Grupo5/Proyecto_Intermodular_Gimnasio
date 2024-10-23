@@ -8,7 +8,7 @@
    - https://github.com/akram-allaoui
 5. Cristian Sanchez
    - https://github.com/cristian11sm
-   
+
 ## Descripción de la Entidad Relación
 Un gimnasio nos ha pedido que realicemos una gestión de su base de datos. Se desea conocer el número de clientes que están inscritos. De cada cliente se quiere conocer el nombre, sus apellidos, su dirección, su documento de identidad, su correo electrónico, su fecha de nacimiento y su número de usuario. Una vez el cliente haya pagado por primera vez una de las tres membresías que posee el gimnasio, las cuales son (Gold, Silver y Bronze), se le entregara una pulsera identificativa con la que podrá acceder al gimnasio, y dentro de él, a las clases dirigidas.   
 
