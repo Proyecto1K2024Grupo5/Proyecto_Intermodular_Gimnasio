@@ -1,11 +1,11 @@
 # Documentación proyecto intermodular
 ## Miembros del grupo
 1. Fernando Rodríguez
-   - Fernan1590@gmail.com
+   - https://github.com/Fernan1590
 2. Juan Sebastián Franco
    - https://github.com/ZianFranxes
 4. Akram Allaoui
-   - akrall@alu.edu.gva.es
+   - https://github.com/akram-allaoui
 5. Cristian Sanchez
    - https://github.com/cristian11sm
    
