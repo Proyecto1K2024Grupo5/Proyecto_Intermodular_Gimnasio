@@ -20,3 +20,4 @@ Hay dos tipos de salas, las de clases dirigidas por monitores en las que imparte
 
 ## Modelo de la Entidad Relación
 ![image (1)](https://github.com/user-attachments/assets/65768fa5-d2b9-43d6-9122-457de9d97319)
+![D82A6B99-FB17-4DCC-9CCB-CD16D0CF75F8](https://github.com/user-attachments/assets/b98df3be-b8c4-4fca-8207-2e0c9634704e)
