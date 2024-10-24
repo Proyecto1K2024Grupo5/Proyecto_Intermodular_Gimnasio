@@ -19,5 +19,4 @@ El usuario, podrá hacer una reserva (la duración de cada sala reservada es de 
 Hay dos tipos de salas, las de clases dirigidas por monitores en las que imparten zumba, yoga o pilates, y las de musculación, de las cuales queremos saber la cantidad de máquinas que hay, es un estilo de entrenamiento libre. Los supervisores pueden estar supervisando las máquinas para que se haga un uso correcto de ellas. De cada sala queremos saber el horario y el número de plazas que tiene. 
 
 ## Modelo de la Entidad Relación
-![IMG_5819.jpg](Imagenes/IMG_5819.jpg)
-![er.png](Imagenes/er.png)
+![image (1)](https://github.com/user-attachments/assets/65768fa5-d2b9-43d6-9122-457de9d97319)
