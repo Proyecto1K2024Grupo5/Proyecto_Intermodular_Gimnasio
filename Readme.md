@@ -20,8 +20,8 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ## Modelo de la Entidad Relación
 
-![Captura de pantalla 2024-10-31 173050](https://github.com/user-attachments/assets/d827d015-7263-4ef9-a242-6c82efe10ef7)
+![IMG_7212.jpg](Imagenes/IMG_7212.jpg)
 
-![processed-32235C04-EFDD-4743-9B6A-F18132731CF0](https://github.com/user-attachments/assets/e4c4d77d-f74e-46c9-a1b4-3bf52bfe48fa)
+![1.jpg](Imagenes/1.jpg)
 
 
