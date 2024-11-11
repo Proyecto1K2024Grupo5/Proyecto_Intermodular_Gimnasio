@@ -13,7 +13,7 @@
 
 ### 1. Sistema de información (SI)
 ### 2. Modelo Entidad Relación Extendido (EER)
-### 3.Modelo Relacional (MR)
+### 3. Modelo Relacional (MR)
 ### 4. Diccionario de datos (DD)
 
 
