@@ -34,7 +34,98 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 ![1.jpg](Imagenes/1.jpg)
 
 ---
+## Diccionario de Datos (DD)
 
+**CLIENTE**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Nif         | Varchar (32)   | Clave primaria, identificador de cliente |
+| Email       | Varchar (128)  | Email de cliente                  |
+| fAlta       | Fecha          | Fecha de alta del cliente         |
+| contAcceso  | Int            | Contador de acceso                |
+| Fnac        | Fecha          | Fecha de nacimiento               |
+| Nombre      | Char (32)      | Nombre del cliente                |
+| Apellidos   | Char (64)      | Apellidos del cliente             |
+
+**MEMBRESIA**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Tipo        | Char (16)      | Clave primaria, tipo de membresia del cliente |
+| Precio      | Int            | Precio de la membresia            |
+| idMembresia | Int            | Identificador de la membresia     |
+| Nif         | Varchar (32)   | Clave ajena de CLIENTE            |
+
+**GIMNASIO**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Codigo      | Int            | Clave primaria, identificador del gimnasio |
+| Nombre      | Varchar (64)   | Nombre del gimnasio               |
+| Nif         | Varchar (32)   | Clave ajena CLIENTE               |
+
+**SALA**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Id          | Int            | Identificador de la sala          |
+| Plazas      | Int            | Numero de plazas                  |
+| Horario     | Fecha          | Horario de la sala                |
+| Codigo      | Int            | Clave ajena de GIMNASIO           |
+| Nif         | Varchar (32)   | Clave ajena de CLIENTE            |
+
+**TRABAJADOR**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Nif         | Varchar (32)   | Clave primaria y nif del trabajador |
+| Fnac        | Fecha          | Fecha de nacimiento del trabajador |
+| Nombre      | Char (32)      | Nombre del trabajador             |
+| Apellido    | Char (64)      | Apellidos del trabajador          |
+| Email       | Varchar (128)  | Email del trabajador              |
+
+**MONITOR**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Nif         | Varchar (32)   | Clave primaria y ajena de TRABAJADOR |
+| Fnac        | Fecha          | Fecha de nacimiento               |
+| Nombre      | Char (32)      | Nombre del monitor                |
+| Apellido    | Char (64)      | Apellido del monitor              |
+| Email       | Varchar (128)  | Email del monitor                 |
+
+**SUPERVISOR**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Nif         | Varchar (32)   | Clave primaria y ajena de TRABAJADOR |
+| Fnac        | Fecha          | Fecha de nacimiento               |
+| Nombre      | Char (32)      | Nombre del supervisor             |
+| Apellido    | Char (64)      | Apellido del supervisor           |
+| Email       | Varchar (128)  | Email del supervisor              |
+
+**CLASES**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Id          | Int            | Clave primaria y ajena de SALA    |
+| Plazas      | Int            | Numero de plazas                  |
+| Horario     | Fecha          | Horario de la sala                |
+| Nif         | Varchar (32)   | Clave ajena de MONITOR            |
+
+**MUSCULACION**
+
+| Campo       | Tipo de dato   | Descripcion                       |
+|-------------|----------------|------------------------------------|
+| Id          | Int            | Clave primaria y ajena de SALA    |
+| Plazas      | Int            | Numero de plazas                  |
+| Horario     | Fecha          | Horario de la sala                |
+| Nif         | Varchar (32)   | Clave ajena de SUPERVISOR         |
+
+
+
+---
 ## Relacion y Restricciones del Diccionario de Datos
 
 **CLIENTE**
