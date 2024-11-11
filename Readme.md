@@ -85,6 +85,7 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 - **FK**: (nifSupervisor) --> SUPERVISOR
 
 
+
 ---
 ## 4. Diccionario de Datos (DD)
 
