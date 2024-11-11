@@ -36,50 +36,49 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 
 ---
-
 ## 3. Modelo Relacional (MR)
 
-## CLIENTE
+### CLIENTE
 - **Atributos**: (nif, email, fAlta, contAcceso, fnac, nombre, apellidos)
 - **PK**: (nif)
 
-## MEMBRESIA
+### MEMBRESIA
 - **Atributos**: (tipo, precio, idMembresia, nifCliente*)
 - **PK**: (tipo)
 - **FK**: (nifCliente) --> CLIENTE
 
-## GIMNASIO
+### GIMNASIO
 - **Atributos**: (codigo, nombre, nifCliente*)
 - **PK**: (codigo)
 - **FK**: (nifCliente) --> CLIENTE
 
-## SALA
+### SALA
 - **Atributos**: (id, plazas, horario, codigo*, nifCliente*)
 - **PK**: (id)
 - **FK**: (codigo) --> GIMNASIO
 - **FK**: (nifCliente) --> CLIENTE
 
-## TRABAJADOR
+### TRABAJADOR
 - **Atributos**: (nif, fnac, nombre, apellido, email)
 - **PK**: (nif)
 
-## MONITOR
+### MONITOR
 - **Atributos**: (nif*)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
 
-## SUPERVISOR
+### SUPERVISOR
 - **Atributos**: (nif*)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
 
-## CLASES
+### CLASES
 - **Atributos**: (id*, nifMonitor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifMonitor) --> MONITOR
 
-## MUSCULACION
+### MUSCULACION
 - **Atributos**: (id*, nifSupervisor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
