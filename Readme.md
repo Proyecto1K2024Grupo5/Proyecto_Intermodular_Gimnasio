@@ -39,47 +39,47 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 ## 3. Modelo Relacional (MR)
 
 ### CLIENTE
-- **Atributos**: (nif, email, fAlta, contAcceso, fnac, nombre, apellidos)
+- **Atributos**: (<u>nif</u>, email, fAlta, contAcceso, fnac, nombre, apellidos)
 - **PK**: (nif)
 
 ### MEMBRESIA
-- **Atributos**: (tipo, precio, idMembresia, nifCliente*)
+- **Atributos**: (<u>tipo</u>, precio, idMembresia, nifCliente*)
 - **PK**: (tipo)
 - **FK**: (nifCliente) --> CLIENTE
 
 ### GIMNASIO
-- **Atributos**: (codigo, nombre, nifCliente*)
+- **Atributos**: (<u>codigo</u>, nombre, nifCliente*)
 - **PK**: (codigo)
 - **FK**: (nifCliente) --> CLIENTE
 
 ### SALA
-- **Atributos**: (id, plazas, horario, codigo*, nifCliente*)
+- **Atributos**: (<u>id</u>, plazas, horario, codigo*, nifCliente*)
 - **PK**: (id)
 - **FK**: (codigo) --> GIMNASIO
 - **FK**: (nifCliente) --> CLIENTE
 
 ### TRABAJADOR
-- **Atributos**: (nif, fnac, nombre, apellido, email)
+- **Atributos**: (<u>nif</u>, fnac, nombre, apellido, email)
 - **PK**: (nif)
 
 ### MONITOR
-- **Atributos**: (nif*)
+- **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
 
 ### SUPERVISOR
-- **Atributos**: (nif*)
+- **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
 
 ### CLASES
-- **Atributos**: (id*, nifMonitor*)
+- **Atributos**: (<u>id* </u>, nifMonitor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifMonitor) --> MONITOR
 
 ### MUSCULACION
-- **Atributos**: (id*, nifSupervisor*)
+- **Atributos**: (<u>id* </u>, nifSupervisor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifSupervisor) --> SUPERVISOR
