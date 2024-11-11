@@ -9,7 +9,7 @@
 5. Cristian Sanchez
    - https://github.com/cristian11sm
 
-# Indice de los puntos
+## Indice de los puntos
 
 ### 1. Sistema de información (SI)
 ### 2. Modelo Entidad Relación Extendido (EER)
@@ -33,7 +33,15 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ![1.jpg](Imagenes/1.jpg)
 
+## Justificación
 
+Por una parte, en la entidad *“membresía”* hemos puesto el atributo *“tipo”* porque hay tres membresías distintas, las cuales son: GOLD (30 reservas disponibles), SILVER (20 reservas disponibles), BRONZE (10 reservas disponibles). Con reservas disponibles nos referimos a la cantidad de reservas restantes que le quedan al cliente por hacer, cuando el contador esté en cero, deberá pagar otra vez la misma membresía u otra.
+ 
+Por otra parte, La relación *“haber”* y la entidad *“sala”* las hemos puesto débiles porque el gimnasio puede estar en distintas ciudades, no hay uno solo. Además, las salas pueden ser de clases dirigidas o de musculación al estilo libre, por eso, estas dos últimas las hemos puesto como hijos de sala y con una “d” ya que una sala puede ser o de clases o de musculación, no de las dos a la vez.
+
+Seguido de esto, el atributo *"fecha”* en acceder la hemos puesto con compuesto y multivaluado porque un cliente puede entrar y salir varias veces un mismo día, por eso, podría tener varios valores 
+
+Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijos *“monitor”* y *“supervisor”* y de tipo *“d”* también.
 
 ---
 ## 3. Modelo Relacional (MR)
@@ -231,6 +239,3 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 - Clave ajena en MUSCULACION: `Nif`, referencia a `Nif` en la tabla SUPERVISOR, indicando la relacion entre musculacion y un supervisor.
 - Restriccion de borrado: rechazar.
 - Restriccion de modificacion: propagar.
-
-
-
