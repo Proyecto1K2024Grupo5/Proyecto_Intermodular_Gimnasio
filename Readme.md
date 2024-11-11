@@ -9,7 +9,16 @@
 5. Cristian Sanchez
    - https://github.com/cristian11sm
 
-## Descripción de la Entidad Relación
+# Indice de los puntos
+
+### 1. - Sistema de información (SI)
+### 2. - Modelo Entidad Relación Extendido (EER)
+### 3. - Modelo Relacional (MR)
+### 4. - Diccionario de datos (DD)
+
+
+
+## 1 - SISTEMA DE INFORMACIÓN
 Un gimnasio nos ha pedido que realicemos una gestión de su base de datos. De cada cliente se quiere conocer nombre, apellidos, NIF, correo electrónico y fecha de nacimiento. Los trabajadores se dividen en monitores y supervisores, de los cuales queremos conocer los mismos datos. 
 
 El cliente debe pagar una de las tres membresías que tiene el gimnasio (Gold, Silver y Bronze), cada membresía contiene el número de veces que puede reservar una sala, cada vez que reserve una sala bajará el numero restante y cuando se acaben, deberá pagar de nuevo la membresía u otra (Bronze contiene 10, Silver contiene 20 y Gold contiene 30). Una vez apuntado a una membresía se le iran restando los accesos que realiza al gimnasio. 
