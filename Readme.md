@@ -33,6 +33,61 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ![1.jpg](Imagenes/1.jpg)
 
+
+
+---
+
+## 3. Modelo Relacional (MR)
+
+#### CLIENTE
+- **Atributos**: nif, email, fAlta, contAcceso, fnac, nombre, apellidos
+- **Clave primaria (PK)**: nif
+
+#### MEMBRESIA
+- **Atributos**: tipo, precio, idMembresia, nifCliente*
+- **Clave primaria (PK)**: tipo
+- **Clave foránea (FK)**: nifCliente ➔ CLIENTE
+
+#### GIMNASIO
+- **Atributos**: codigo, nombre, nifCliente*
+- **Clave primaria (PK)**: codigo
+- **Clave foránea (FK)**: nifCliente ➔ CLIENTE
+
+#### SALA
+- **Atributos**: id, plazas, horario, codigo*, nifCliente*
+- **Clave primaria (PK)**: id
+- **Claves foráneas (FK)**:
+  - codigo ➔ GIMNASIO
+  - nifCliente ➔ CLIENTE
+
+#### TRABAJADOR
+- **Atributos**: nif, fnac, nombre, apellido, email
+- **Clave primaria (PK)**: nif
+
+#### MONITOR
+- **Atributos**: nif*
+- **Clave primaria (PK)**: nif
+- **Clave foránea (FK)**: nif ➔ TRABAJADOR
+
+#### SUPERVISOR
+- **Atributos**: nif*
+- **Clave primaria (PK)**: nif
+- **Clave foránea (FK)**: nif ➔ TRABAJADOR
+
+#### CLASES
+- **Atributos**: id*, nifMonitor*
+- **Clave primaria (PK)**: id
+- **Claves foráneas (FK)**:
+  - id ➔ SALA
+  - nifMonitor ➔ MONITOR
+
+#### MUSCULACION
+- **Atributos**: id*, nifSupervisor*
+- **Clave primaria (PK)**: id
+- **Claves foráneas (FK)**:
+  - id ➔ SALA
+  - nifSupervisor ➔ SUPERVISOR
+
 ---
 ## 4. Diccionario de Datos (DD)
 
