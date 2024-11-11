@@ -33,4 +33,60 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ![1.jpg](Imagenes/1.jpg)
 
+---
+
+## Relacion y Restricciones del Diccionario de Datos
+
+**CLIENTE**
+- Clave primaria en CLIENTE: `Nif`
+
+**MEMBRESIA**
+- Clave primaria en MEMBRESIA: `Tipo`
+- Clave ajena en MEMBRESIA: `Nif`, referencia a `Nif` en la tabla CLIENTE, indicando la relacion entre una membresia y su cliente.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**GIMNASIO**
+- Clave primaria en GIMNASIO: `Codigo`
+- Clave ajena en GIMNASIO: `Nif`, referencia a `Nif` en la tabla CLIENTE, indicando la relacion entre un gimnasio y su cliente.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**SALA**
+- Clave primaria en SALA: `Id`
+- Clave ajena en SALA: `Codigo`, referencia a `Codigo` en la tabla GIMNASIO, indicando la relacion entre una sala y su gimnasio.
+- Clave ajena en SALA: `Nif`, referencia a `Nif` en la tabla CLIENTE, indicando la relacion entre una sala y el cliente.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**TRABAJADOR**
+- Clave primaria en TRABAJADOR: `Nif`
+
+**MONITOR**
+- Clave primaria en MONITOR: `Nif`
+- Clave ajena en MONITOR: `Nif`, referencia a `Nif` en la tabla TRABAJADOR, indicando la relacion entre un monitor y un trabajador.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**SUPERVISOR**
+- Clave primaria en SUPERVISOR: `Nif`
+- Clave ajena en SUPERVISOR: `Nif`, referencia a `Nif` en la tabla TRABAJADOR, indicando la relacion entre un supervisor y un trabajador.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**CLASES**
+- Clave primaria en CLASES: `Id`
+- Clave ajena en CLASES: `Id`, referencia a `Id` en la tabla SALA, indicando la relacion entre una clase y una sala.
+- Clave ajena en CLASES: `Nif`, referencia a `Nif` en la tabla MONITOR, indicando la relacion entre una clase y un monitor.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+**MUSCULACION**
+- Clave primaria en MUSCULACION: `Id`
+- Clave ajena en MUSCULACION: `Id`, referencia a `Id` en la tabla SALA, indicando la relacion entre musculacion y una sala.
+- Clave ajena en MUSCULACION: `Nif`, referencia a `Nif` en la tabla SUPERVISOR, indicando la relacion entre musculacion y un supervisor.
+- Restriccion de borrado: rechazar.
+- Restriccion de modificacion: propagar.
+
+
 
