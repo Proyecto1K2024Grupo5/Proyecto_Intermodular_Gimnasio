@@ -39,54 +39,52 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ## 3. Modelo Relacional (MR)
 
-#### CLIENTE
-- **Atributos**: nif, email, fAlta, contAcceso, fnac, nombre, apellidos
-- **Clave primaria (PK)**: nif
+## CLIENTE
+- **Atributos**: (nif, email, fAlta, contAcceso, fnac, nombre, apellidos)
+- **PK**: (nif)
 
-#### MEMBRESIA
-- **Atributos**: tipo, precio, idMembresia, nifCliente*
-- **Clave primaria (PK)**: tipo
-- **Clave foránea (FK)**: nifCliente ➔ CLIENTE
+## MEMBRESIA
+- **Atributos**: (tipo, precio, idMembresia, nifCliente*)
+- **PK**: (tipo)
+- **FK**: (nifCliente) --> CLIENTE
 
-#### GIMNASIO
-- **Atributos**: codigo, nombre, nifCliente*
-- **Clave primaria (PK)**: codigo
-- **Clave foránea (FK)**: nifCliente ➔ CLIENTE
+## GIMNASIO
+- **Atributos**: (codigo, nombre, nifCliente*)
+- **PK**: (codigo)
+- **FK**: (nifCliente) --> CLIENTE
 
-#### SALA
-- **Atributos**: id, plazas, horario, codigo*, nifCliente*
-- **Clave primaria (PK)**: id
-- **Claves foráneas (FK)**:
-  - codigo ➔ GIMNASIO
-  - nifCliente ➔ CLIENTE
+## SALA
+- **Atributos**: (id, plazas, horario, codigo*, nifCliente*)
+- **PK**: (id)
+- **FK**: (codigo) --> GIMNASIO
+- **FK**: (nifCliente) --> CLIENTE
 
-#### TRABAJADOR
-- **Atributos**: nif, fnac, nombre, apellido, email
-- **Clave primaria (PK)**: nif
+## TRABAJADOR
+- **Atributos**: (nif, fnac, nombre, apellido, email)
+- **PK**: (nif)
 
-#### MONITOR
-- **Atributos**: nif*
-- **Clave primaria (PK)**: nif
-- **Clave foránea (FK)**: nif ➔ TRABAJADOR
+## MONITOR
+- **Atributos**: (nif*)
+- **PK**: (nif)
+- **FK**: (nif) --> TRABAJADOR
 
-#### SUPERVISOR
-- **Atributos**: nif*
-- **Clave primaria (PK)**: nif
-- **Clave foránea (FK)**: nif ➔ TRABAJADOR
+## SUPERVISOR
+- **Atributos**: (nif*)
+- **PK**: (nif)
+- **FK**: (nif) --> TRABAJADOR
 
-#### CLASES
-- **Atributos**: id*, nifMonitor*
-- **Clave primaria (PK)**: id
-- **Claves foráneas (FK)**:
-  - id ➔ SALA
-  - nifMonitor ➔ MONITOR
+## CLASES
+- **Atributos**: (id*, nifMonitor*)
+- **PK**: (id)
+- **FK**: (id) --> SALA
+- **FK**: (nifMonitor) --> MONITOR
 
-#### MUSCULACION
-- **Atributos**: id*, nifSupervisor*
-- **Clave primaria (PK)**: id
-- **Claves foráneas (FK)**:
-  - id ➔ SALA
-  - nifSupervisor ➔ SUPERVISOR
+## MUSCULACION
+- **Atributos**: (id*, nifSupervisor*)
+- **PK**: (id)
+- **FK**: (id) --> SALA
+- **FK**: (nifSupervisor) --> SUPERVISOR
+
 
 ---
 ## 4. Diccionario de Datos (DD)
