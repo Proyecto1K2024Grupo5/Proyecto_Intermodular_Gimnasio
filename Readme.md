@@ -16,7 +16,7 @@
 ### 3. Modelo Relacional (MR)
 ### 4. Diccionario de datos (DD)
 
-
+---
 
 ## 1.  SISTEMA DE INFORMACIÓN
 Somos un gimnasio y queremos realizar una gestión de nuestra base de datos. De cada cliente se quiere conocer nombre, apellidos, NIF, correo electrónico y fecha de nacimiento. Nuestros trabajadores se dividen en monitores y supervisores, de los cuales queremos conocer los mismos datos. 
