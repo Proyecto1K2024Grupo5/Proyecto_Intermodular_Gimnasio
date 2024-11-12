@@ -41,7 +41,7 @@ Por una parte, en la entidad *“membresía”* hemos puesto el atributo *“tip
  
 Por otra parte, La relación *“haber”* y la entidad *“sala”* las hemos puesto débiles porque el gimnasio puede estar en distintas ciudades, no hay uno solo. Además, las salas pueden ser de clases dirigidas o de musculación al estilo libre, por eso, estas dos últimas las hemos puesto como hijos de sala y con una “d” ya que una sala puede ser o de clases o de musculación, no de las dos a la vez.
 
-Seguido de esto, el atributo *"fecha”* en acceder la hemos puesto con compuesto y multivaluado porque un cliente puede entrar y salir varias veces un mismo día, por eso, podría tener varios valores 
+Seguido de esto, el atributo *"fecha”* en acceder lo hemos puesto con compuesto y multivaluado porque un cliente puede entrar y salir varias veces un mismo día, por eso, podría tener varios valores 
 
 Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijos *“monitor”* y *“supervisor”* y de tipo *“d”* también.
 
