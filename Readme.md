@@ -9,6 +9,8 @@
 5. Cristian Sanchez
    - https://github.com/cristian11sm
 
+---
+
 ## Indice de los puntos
 
 ### 1. Sistema de información (SI)
