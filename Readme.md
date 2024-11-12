@@ -54,17 +54,21 @@ Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijo
 - **Atributos**: (<u>tipo</u>, precio, idMembresia, nifCliente*)
 - **PK**: (tipo)
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (nifCliente)
 
 ### GIMNASIO
 - **Atributos**: (<u>codigo</u>, nombre, nifCliente*)
 - **PK**: (codigo)
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (nifCliente)
 
 ### SALA
 - **Atributos**: (<u>id</u>, plazas, horario, codigo*, nifCliente*)
 - **PK**: (id)
 - **FK**: (codigo) --> GIMNASIO
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (codigo)
+- **VNN**: (nifCliente)
 
 ### TRABAJADOR
 - **Atributos**: (<u>nif</u>, fnac, nombre, apellido, email)
@@ -74,24 +78,28 @@ Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijo
 - **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
+- **VNN**: (nif)
 
 ### SUPERVISOR
 - **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
+- **VNN**: (nif)
 
 ### CLASES
 - **Atributos**: (<u>id* </u>, nifMonitor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifMonitor) --> MONITOR
+- **VNN**: (nifmonitor)
 
 ### MUSCULACION
 - **Atributos**: (<u>id* </u>, nifSupervisor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifSupervisor) --> SUPERVISOR
-
+- **VNN**: (nifSupervisor)
+  
 ![Captura_de_pantalla_2024-11-11_111452.jpg](Imagenes/Captura_de_pantalla_2024-11-11_111452.jpg)
 
 ---
