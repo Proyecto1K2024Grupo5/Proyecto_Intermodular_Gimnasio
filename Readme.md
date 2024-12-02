@@ -252,7 +252,7 @@ Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijo
 
 ## MODELO DDL Y DML
 1. Fernando Rodríguez
-   - Sentendias DDL
+   - Sentencias DDL
 2. Juan Sebastián Franco
    - Sentencias DML
 3. Cristian Sanchez
