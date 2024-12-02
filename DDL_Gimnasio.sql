@@ -1,3 +1,8 @@
+
+
+
+
+
 -- Creamos la tabla para Cliente
 -- Cliente tiene como clave primaria nif y como ajena el tipoMembresia.
 -- El email se ha decidido poner en NOT NULL debido a que al correo de todos los
@@ -5,8 +10,8 @@
 
 CREATE TABLE CLIENTE (
     nif VARCHAR (9),
-    nombre CHAR (32),
-    apellidos CHAR (128),
+    nombre VARCHAR (32),
+    apellidos VARCHAR (128),
     fnac DATE,
     email VARCHAR (128) NOT NULL,
     falta DATE DEFAULT CURRENT_DATE,
@@ -121,8 +126,8 @@ CREATE TABLE RESERVA (
 
 CREATE TABLE TRABAJADOR (
     nif VARCHAR (9),
-    nombre CHAR (32),
-    apellidos CHAR (128),
+    nombre VARCHAR (32),
+    apellidos VARCHAR (128),
     fnac DATE,
     email VARCHAR (128),
     CONSTRAINT PK_trabajador PRIMARY KEY (nif)
