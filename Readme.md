@@ -249,3 +249,11 @@ Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijo
 - Clave ajena en MUSCULACION: `Nif`, referencia a `Nif` en la tabla SUPERVISOR, indicando la relacion entre musculacion y un supervisor.
 - Restriccion de borrado: rechazar.
 - Restriccion de modificacion: propagar.
+
+## MODELO DDL Y DML
+1. Fernando Rodríguez
+   - Sentendias DDL
+2. Juan Sebastián Franco
+   - Sentencias DML
+3. Cristian Sanchez
+   - Vaciado de tablas
