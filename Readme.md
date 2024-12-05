@@ -33,7 +33,7 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ![IMG_7212.jpg](Imagenes/IMG_7212.jpg)
 
-![image (2)](https://github.com/user-attachments/assets/2f2186b1-ced6-4037-9e36-98404c6304cc)
+![image (3)](https://github.com/user-attachments/assets/19459359-bbfa-430c-bfae-1976c99ced8e)
 
 ## Justificación
 
