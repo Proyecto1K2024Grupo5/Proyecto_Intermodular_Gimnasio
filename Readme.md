@@ -1,4 +1,4 @@
-![image (2)](https://github.com/user-attachments/assets/d84c3464-1071-40d9-9ad3-ccb751a183a4)# Documentación proyecto intermodular
+# Documentación proyecto intermodular
 ## Miembros del grupo
 1. Fernando Rodríguez
    - https://github.com/Fernan1590
