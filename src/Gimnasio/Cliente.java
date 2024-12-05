@@ -11,16 +11,14 @@ public class Cliente {
     private String tipoMembresia;
 
     public void pagar(){
-
+        System.out.println("Acabas de pagar una mensualidad");
     }
     public void reservar(){
+        System.out.println("Acabas de reservar al gimnasio");
 
     }
     public void acceder(){
 
     }
-
-
-
 
 }
