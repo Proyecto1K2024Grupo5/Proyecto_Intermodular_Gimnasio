@@ -4,7 +4,7 @@ INSERT INTO CLIENTE (nif, nombre, apellidos, fnac, email, falta, contAcceso, tip
 ('28388487Z', 'Alejandro', 'Magno', '1588-02-05', 'elmismisimo@gmail.com', '2024-01-02', 0, 'Gold'),
 ('38848484P', 'Franco', 'Franquisimo', '1939-11-0', 'franco@gmail.com', '2024-02-28', 0, 'Silver'),
 ('29392934Y', 'Sofia', 'Panadera', '1945-03-12', 'quecosote@gmail.com', '2023-11-19', 0, 'Bronze'),
-('12345678Y', 'Victor', 'Sullivan', '1982-04-13', 'saquenotro@gmail.com', '2024-10-09', 0, 'Gold'),
+('12345677Y', 'Victor', 'Sullivan', '1982-04-13', 'saquenotro@gmail.com', '2024-10-09', 0, 'Gold'),
 ('28282773S', 'Natan', 'Drake', '1993-02-10', 'omgadabro@gmail.com', '2024-06-01', 0, 'Gold'),
 ('21938483O', 'Leon', 'Kennedy', '1995-02-09', 'queguapo@gmail.com', '2023-01-21', 0, 'Bronze'),
 ('48959433Y', 'Estan', 'Lin', '1982-01-16', 'muajaja@gmail.com', '2024-03-23', 0, 'Silver'),
