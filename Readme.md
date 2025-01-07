@@ -6,17 +6,19 @@
    - https://github.com/ZianFranxes
 4. Akram Allaoui
    - https://github.com/akram-allaoui
-5. Cristian Sanchez
+5. Cristian Sánchez
    - https://github.com/cristian11sm
 
-# Indice de los puntos
+---
+
+## Indice de los puntos
 
 ### 1. Sistema de información (SI)
 ### 2. Modelo Entidad Relación Extendido (EER)
 ### 3. Modelo Relacional (MR)
 ### 4. Diccionario de datos (DD)
 
-
+---
 
 ## 1.  SISTEMA DE INFORMACIÓN
 Somos un gimnasio y queremos realizar una gestión de nuestra base de datos. De cada cliente se quiere conocer nombre, apellidos, NIF, correo electrónico y fecha de nacimiento. Nuestros trabajadores se dividen en monitores y supervisores, de los cuales queremos conocer los mismos datos. 
@@ -31,9 +33,17 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 
 ![IMG_7212.jpg](Imagenes/IMG_7212.jpg)
 
-![1.jpg](Imagenes/1.jpg)
+![image (3)](https://github.com/user-attachments/assets/19459359-bbfa-430c-bfae-1976c99ced8e)
 
+## Justificación
 
+Por una parte, en la entidad *“membresía”* hemos puesto el atributo *“tipo”* porque hay tres membresías distintas, las cuales son: GOLD (30 reservas disponibles), SILVER (20 reservas disponibles), BRONZE (10 reservas disponibles). Con reservas disponibles nos referimos a la cantidad de reservas restantes que le quedan al cliente por hacer, cuando el contador esté en cero, deberá pagar otra vez la misma membresía u otra.
+ 
+Por otra parte, La relación *“haber”* y la entidad *“sala”* las hemos puesto débiles porque el gimnasio puede estar en distintas ciudades, no hay uno solo. Además, las salas pueden ser de clases dirigidas o de musculación al estilo libre, por eso, estas dos últimas las hemos puesto como hijos de sala y con una “d” ya que una sala puede ser o de clases o de musculación, no de las dos a la vez.
+
+Seguido de esto, el atributo *"fecha”* en acceder lo hemos puesto con compuesto y multivaluado porque un cliente puede entrar y salir varias veces un mismo día, por eso, podría tener varios valores 
+
+Por último, más de lo mismo con la entidad *“trabajador”*, tiene como hijos *“monitor”* y *“supervisor”* y de tipo *“d”* también.
 
 ---
 ## 3. Modelo Relacional (MR)
@@ -46,17 +56,21 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 - **Atributos**: (<u>tipo</u>, precio, idMembresia, nifCliente*)
 - **PK**: (tipo)
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (nifCliente)
 
 ### GIMNASIO
 - **Atributos**: (<u>codigo</u>, nombre, nifCliente*)
 - **PK**: (codigo)
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (nifCliente)
 
 ### SALA
 - **Atributos**: (<u>id</u>, plazas, horario, codigo*, nifCliente*)
 - **PK**: (id)
 - **FK**: (codigo) --> GIMNASIO
 - **FK**: (nifCliente) --> CLIENTE
+- **VNN**: (codigo)
+- **VNN**: (nifCliente)
 
 ### TRABAJADOR
 - **Atributos**: (<u>nif</u>, fnac, nombre, apellido, email)
@@ -66,24 +80,28 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 - **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
+- **VNN**: (nif)
 
 ### SUPERVISOR
 - **Atributos**: (<u>nif*</u>)
 - **PK**: (nif)
 - **FK**: (nif) --> TRABAJADOR
+- **VNN**: (nif)
 
 ### CLASES
 - **Atributos**: (<u>id* </u>, nifMonitor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifMonitor) --> MONITOR
+- **VNN**: (nifmonitor)
 
 ### MUSCULACION
 - **Atributos**: (<u>id* </u>, nifSupervisor*)
 - **PK**: (id)
 - **FK**: (id) --> SALA
 - **FK**: (nifSupervisor) --> SUPERVISOR
-
+- **VNN**: (nifSupervisor)
+  
 ![Captura_de_pantalla_2024-11-11_111452.jpg](Imagenes/Captura_de_pantalla_2024-11-11_111452.jpg)
 
 ---
@@ -232,5 +250,10 @@ Hay dos tipos de salas, de las que se encargan los trabajadores del gimnasio de 
 - Restriccion de borrado: rechazar.
 - Restriccion de modificacion: propagar.
 
-
-
+## MODELO DDL Y DML
+1. Fernando Rodríguez
+   - Sentencias DDL
+2. Juan Sebastián Franco
+   - Sentencias DML
+3. Cristian Sánchez
+   - Vaciado de tablas
