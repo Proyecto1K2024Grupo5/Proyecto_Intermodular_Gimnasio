@@ -37,7 +37,7 @@ CREATE TABLE MEMBRESIA (
 -- Gimnasio tiene como clave primaria el codigo que sera la referencia para a que gimnasio nos referimos.
 
 CREATE TABLE GIMNASIO (
-    codigo INT,
+    codigo INT auto_increment,
     nombre VARCHAR (32),
     CONSTRAINT PK_gimnasio PRIMARY KEY (codigo)
 );
