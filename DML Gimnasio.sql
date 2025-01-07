@@ -41,7 +41,7 @@ INSERT INTO ACCESO (fEntrada, fSalida, nifCliente, codGimnasio) VALUES
 ('2023-11-25', '2023-11-25', '29293834K', '7'),
 ('2023-11-24', '2023-11-24', '12345678Y', '8'),
 ('2023-11-23', '2023-11-23', '48959433Y', '9'),
-('2023-11-22', '2023-11-22', '28282773S', '0');
+('2023-11-22', '2023-11-22', '28282773S', '10');
 
 -- Insertar datos en SALA
 INSERT INTO SALA (plazas, horario) VALUES
