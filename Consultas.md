@@ -80,7 +80,7 @@ JOIN gimnasio g ON a.codGimnasio = g.codigo;
 
 **Muestra el nombre de los monitores que dirigieron clases en 2024 y el número total de clases dirigidas por cada uno**
 
-![10.png](/Imagenes%2F10.png)
+
 
 SELECT t.nombre AS nombremonitor,
 COUNT(d.nifmonitor) AS totalclases
@@ -90,3 +90,5 @@ JOIN DIRIGIR d ON d.nifmonitor = m.nifmonitor
 WHERE YEAR(d.fecha) < 2024
 GROUP BY t.nombre
 HAVING COUNT(d.nifmonitor) > 0:
+
+![10.png](/Imagenes%2F10.png)
