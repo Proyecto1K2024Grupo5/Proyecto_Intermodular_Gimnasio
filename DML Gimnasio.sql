@@ -1,15 +1,15 @@
 -- Insertar datos en CLIENTE
 INSERT INTO CLIENTE (nif, nombre, apellidos, fnac, email, falta, contAcceso, tipoMembresia) VALUES
-('123456789Y', 'Salomon', 'Leonidas', '1998-12-12', 'anonimo@gmail.com', '2024-10-09', 0, 'Gold')
-,('283884873Z', 'Alejandro', 'Magno', '1588-02-05', 'elmismisimo@gmail.com', '2024-01-02', 0, 'Gold')
-,('388484847P', 'Franco', 'Franquisimo', '1939-11-0', 'franco@gmail.com', '2024-02-28', 0, 'Silver')
-,('293929345Y', 'Sofia', 'Panadera', '1945-03-12', 'quecosote@gmail.com', '2023-11-19', 0, 'Bronze')
-,('123456789Y', 'Victor', 'Sullivan', '1982-04-13', 'saquenotro@gmail.com', '2024-10-09', 0, 'Gold')
-,('282827733S', 'Natan', 'Drake', '1993-02-10', 'omgadabro@gmail.com', '2024-06-01', 0, 'Gold')
-,('219384832O', 'Leon', 'Kennedy', '1995-02-09', 'queguapo@gmail.com', '2023-01-21', 0, 'Bronze')
-,('489594334Y', 'Estan', 'Lin', '1982-01-16', 'muajaja@gmail.com', '2024-03-23', 0, 'Silver')
-,('292938345K', 'Elver', 'Dulero', '1983-02-22', 'muyduro@gmail.com', '2023-05-12', 0, 'Silver')
-,('372736634N', 'Van', 'Dolera', '1991-01-01', 'vandolera@gmail.com', '2024-08-19', 0, 'Gold');
+('12345678Y', 'Salomon', 'Leonidas', '1998-12-12', 'anonimo@gmail.com', '2024-10-09', 0, 'Gold'),
+('28388487Z', 'Alejandro', 'Magno', '1588-02-05', 'elmismisimo@gmail.com', '2024-01-02', 0, 'Gold'),
+('38848484P', 'Franco', 'Franquisimo', '1939-11-0', 'franco@gmail.com', '2024-02-28', 0, 'Silver'),
+('29392934Y', 'Sofia', 'Panadera', '1945-03-12', 'quecosote@gmail.com', '2023-11-19', 0, 'Bronze'),
+('12345678Y', 'Victor', 'Sullivan', '1982-04-13', 'saquenotro@gmail.com', '2024-10-09', 0, 'Gold'),
+('28282773S', 'Natan', 'Drake', '1993-02-10', 'omgadabro@gmail.com', '2024-06-01', 0, 'Gold'),
+('21938483O', 'Leon', 'Kennedy', '1995-02-09', 'queguapo@gmail.com', '2023-01-21', 0, 'Bronze'),
+('48959433Y', 'Estan', 'Lin', '1982-01-16', 'muajaja@gmail.com', '2024-03-23', 0, 'Silver'),
+('29293834K', 'Elver', 'Dulero', '1983-02-22', 'muyduro@gmail.com', '2023-05-12', 0, 'Silver'),
+('37273663N', 'Van', 'Dolera', '1991-01-01', 'vandolera@gmail.com', '2024-08-19', 0, 'Gold');
 
 -- Insertar datos en MEMBRESIA
 INSERT INTO MEMBRESIA (tipo, precio) VALUES 
