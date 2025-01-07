@@ -18,7 +18,7 @@ INSERT INTO MEMBRESIA (tipo, precio) VALUES
 ('Silver', 60.00);
 
 -- Insertar datos en GIMNASIO
-INSERT INTO gimnasio (codigo, nombre) VALUES
+INSERT INTO GIMNASIO (codigo, nombre) VALUES
 (1, 'Gimnasio Centro Madrid'),
 (2, 'Gimnasio Norte Albacete'),
 (3, 'Gimnasio Sur Elche'),
