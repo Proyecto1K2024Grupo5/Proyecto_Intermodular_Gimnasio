@@ -18,17 +18,17 @@ INSERT INTO MEMBRESIA (tipo, precio) VALUES
 ('Silver', 60.00);
 
 -- Insertar datos en GIMNASIO
-INSERT INTO GIMNASIO (nombre) VALUES
-('Gimnasio Centro Madrid'),
-('Gimnasio Norte Albacete'),
-('Gimnasio Sur Elche'),
-('Gimnasio Este Almeria'),
-('Gimnasio Oeste Castellon'),
-('Gimnasio Premium Valencia'),
-('Gimnasio Plus Toledo'),
-('Gimnasio Max Barcelona'),
-('Gimnasio Familia Alicante'),
-('Gimnasio Urbano Los Palmerales');
+INSERT INTO gimnasio (codigo, nombre) VALUES
+(1, 'Gimnasio Centro Madrid'),
+(2, 'Gimnasio Norte Albacete'),
+(3, 'Gimnasio Sur Elche'),
+(4, 'Gimnasio Este Almeria'),
+(5, 'Gimnasio Oeste Castellon'),
+(6, 'Gimnasio Premium Valencia'),
+(7, 'Gimnasio Plus Toledo'),
+(8, 'Gimnasio Max Barcelona'),
+(9, 'Gimnasio Familia Alicante'),
+(10, 'Gimnasio Urbano Los Palmerales');
 
 -- Insertar datos en ACCESO
 INSERT INTO ACCESO (fEntrada, fSalida, nifCliente, codGimnasio) VALUES
