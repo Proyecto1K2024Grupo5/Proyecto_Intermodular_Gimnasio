@@ -65,17 +65,17 @@ INSERT INTO MUSCULACION (idMusculacion) VALUES
 (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);
 
 -- Insertar datos en RESERVA
-INSERT INTO RESERVA (fecha, nifCliente) VALUES
-('2023-12-01', '28388487Z'),
-('2023-12-01', '21938483O'),
-('2023-12-01', '38848484P'),
-('2023-12-01', '12345677Y'),
-('2023-12-01', '29392934Y'),
-('2023-12-01', '37273663N'),
-('2023-12-01', '29293834K'),
-('2023-12-01', '12345678Y'),
-('2023-12-01', '48959433Y'),
-('2023-12-01', '28282773S');
+INSERT INTO RESERVA (fecha, nifCliente, idSala) VALUES
+('2023-12-01', '28388487Z', 1),
+('2023-12-01', '21938483O', 2),
+('2023-12-01', '38848484P', 3),
+('2023-12-01', '12345677Y', 4),
+('2023-12-01', '29392934Y', 5),
+('2023-12-01', '37273663N', 6),
+('2023-12-01', '29293834K', 7),
+('2023-12-01', '12345678Y', 8),
+('2023-12-01', '48959433Y', 9),
+('2023-12-01', '28282773S', 10);
 
 -- Insertar datos en TRABAJADOR
 INSERT INTO TRABAJADOR (nif, nombre, apellidos, fnac, email) VALUES
@@ -98,7 +98,7 @@ INSERT INTO MONITOR (nifMonitor) VALUES
 -- Insertar datos en SUPERVISOR
 INSERT INTO SUPERVISOR (nifSupervisor) VALUES
 ('12345678X'), ('87654321Y'), ('13579246Z'), ('24681357W'), ('34567891V'),
-('98765432U'), ('19283746T'), ('12378945S'), ('45632178R'), ('78912365Q')
+('98765432U'), ('19283746T'), ('12378945S'), ('45632178R'), ('78912365Q');
 
 -- Insertar datos en SUPERVISAR
 INSERT INTO SUPERVISAR (fecha, turno, nifSupervisor, idMusculacion)
