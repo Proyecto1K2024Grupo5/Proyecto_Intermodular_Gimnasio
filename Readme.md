@@ -2,7 +2,7 @@
 
 ### Consultas
 
-[Click here](https://github.com/Proyecto1K2024Grupo5/Proyecto_Intermodular_Gimnasio/blob/978b390b04345aa34990ee0a13805a721a798d05/Consultas.md)
+[Click here](https://github.com/Proyecto1K2024Grupo5/Proyecto_Intermodular_Gimnasio/blob/80817d0676adcfaace6b156680756487bbf8ead6/Consultas.md)
 
 ### DDL
 
