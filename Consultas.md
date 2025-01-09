@@ -190,7 +190,7 @@ JOIN TRABAJADOR t ON m.nifmonitor = t.nif
 JOIN DIRIGIR d ON d.nifmonitor = m.nifmonitor
 WHERE YEAR(d.fecha) < 2024
 GROUP BY t.nombre
-HAVING COUNT(d.nifmonitor) > 0:
+COUNT(d.nifmonitor) > 0:
 
 
 | nombreMonitor | totalClases |  
