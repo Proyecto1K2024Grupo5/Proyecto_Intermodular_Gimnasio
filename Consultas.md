@@ -6,6 +6,22 @@ FROM cliente;
 
 ![1.png](/Imagenes%2F1.png)
 
+| nombre | fAlta |  
+|--------|-------|  
+| Victor | 2024-10-09 |  
+| Salomon | 2024-10-09 |  
+| Leon | 2023-10-21 |  
+| Natan | 2024-10-09 |
+| Alejandro | 2024-10-09 |
+| Elver | 2023-05-12 |
+| Sofia | 2024-11-19 |
+| Van | 2024-08-19 |
+| Franco | 2024-02-28 |
+| Estan | 2024-03-23 |
+
+
+
+
 **Muestra el nombre de los clientes que tienen la membresia GOLD**
 
 SELECT nombre, tipoMembresia
@@ -13,6 +29,16 @@ FROM cliente
 WHERE tipoMembresia = 'GOLD'; 
 
 ![2.png](/Imagenes%2F2.png)
+
+| nombre    | tipoMembresia |  
+|-----------|--------------|  
+| Victor    | Gold |  
+| Salomon   | Gold |  
+| Natan     | Gold |  
+| Alejandro | Gold |
+| Van       | Gold |
+
+
 
 **Muestra el nif del trabajador que dirige las clases dirigidas en horario de TARDE**
 
@@ -22,6 +48,10 @@ WHERE turno = 'TARDE';
 
 ![3.png](/Imagenes%2F3.png)
 
+| nifMonitor | turno |  
+|------------|-------|  
+| 12345678X  | Tarde |  
+
 **Muestra el nif de los clientes que acceden al gimnasio con el codigo 3**
 
 SELECT nifCliente, codGimnasio
@@ -30,6 +60,10 @@ WHERE codGimnasio = 3;
 
 ![4.png](/Imagenes%2F4.png)
 
+| nifCliente | codGimnasio |  
+|------------|-------------|  
+| 38848484P  | 3           |  
+
 **Muestra los clientes que accedieron al gimnasio 3 dentro del año 2024**
 
 SELECT nifCliente, codGimnasio, fentrada
@@ -37,6 +71,10 @@ FROM acceso
 WHERE codGimnasio = 3 AND YEAR(fentrada) < 2024;
 
 ![5.png](/Imagenes%2F5.png)
+
+| nifCliente | codGimnasio | fentrada   |  
+|------------|-------------|------------|
+| 38848484P  | 3           | 2023-11-29 |
 
 **Muestra los nombres de los monitores y supervisores junto con el rol que desempeñan**
 
@@ -50,6 +88,29 @@ JOIN supervisor s ON t.nif = s.nifsupervisor;
 
 ![6.png](/Imagenes%2F6.png)
 
+| nombre | rol        |  
+|--------|------------|  
+| Tomas  | monitor    | 
+| Raquel | monitor    | 
+| David  | monitor    | 
+| Sergio | monitor    | 
+| Lucia  | monitor    | 
+| Pablo  | monitor    | 
+| Isabel | monitor    | 
+| Victor | monitor    |
+| Sandra | monitor    | 
+| Marta  | monitor    | 
+| Tomas  | supervisor | 
+| Raquel | supervisor |
+| David  | supervisor |
+| Sergio | supervisor |
+| Lucia  | supervisor |
+| Pablo  | supervisor |
+| Isabel | supervisor |
+| Victor | supervisor |
+| Sandra | supervisor |
+| Marta  | supervisor |
+
 **Muestra el nombre y el email de los clientes que han reservado una sala con menos de 25 plazas**
 
 SELECT c.nombre, c.email
@@ -60,6 +121,19 @@ WHERE s.plazas < 25;
 
 ![7.png](/Imagenes%2F7.png)
 
+| nombre    | email                 |  
+|-----------|-----------------------|  
+| Alejandro | elmismisimo@gmail.com | 
+| Leon      | queguapo@gmail.com    | 
+| Franco    | franco@gmail.com      | 
+| Victor    | saquenotro@gmail.com  | 
+| Sofia     | quecosote@gmail.com   | 
+| Van       | vandolera@gmail.com   | 
+| Elver     | muyduro@gmail.com     | 
+| Salomon   | anonimo@gmail.com     |
+| Estan     | muajaja@gmail.com     | 
+| Natan     | omgadabro@gmail.com   | 
+
 **Obtén los gimnasios que no tienen ninguna sala asignada**
 
 SELECT g.codigo, g.nombre
@@ -69,6 +143,19 @@ WHERE s.id IS NULL;
 
 ![8.png](/Imagenes%2F8.png)
 
+| codigo | nombre                         |  
+|--------|--------------------------------|  
+| 1      | Gimnasio centro Madrid         | 
+| 2      | Gimnasio norte Albacete        | 
+| 3      | Gimnasio sur Elche             | 
+| 4      | Gimnasio este Almeria          | 
+| 5      | Gimnasio oeste Castellon       | 
+| 6      | Gimnasio premium Valencia      | 
+| 7      | Gimnasio plus Toledo           | 
+| 8      | Gimnasio max Barcelona         |
+| 9      | Gimnasio familia Alicante      | 
+| 10     | Gimnasio urbano Los Palmerales | 
+
 **Muestra el nombre de los clientes junto con el nombre del gimnasio al que accedieron**
 
 SELECT c.nombre AS nombrecliente, g.nombre AS nombregimnasio
@@ -77,6 +164,19 @@ JOIN acceso a ON c.nif = a.nifCliente
 JOIN gimnasio g ON a.codGimnasio = g.codigo;
 
 ![9.png](/Imagenes%2F9.png)
+
+| nombreCliente | nombreGimnasio                 |  
+|---------------|--------------------------------|  
+| Alejandro     | Gimnasio centro Madrid         | 
+| Leon          | Gimnasio norte Albacete        | 
+| Franco        | Gimnasio sur Elche             | 
+| Victor        | Gimnasio este Almeria          | 
+| Sofia         | Gimnasio oeste Castellon       | 
+| Van           | Gimnasio premium Valencia      | 
+| Elver         | Gimnasio plus Toledo           | 
+| Salomon       | Gimnasio max Barcelona         |
+| Estan         | Gimnasio familia Alicante      | 
+| Natan         | Gimnasio urbano Los Palmerales | 
 
 **Muestra el nombre de los monitores que dirigieron clases en 2024 y el número total de clases dirigidas por cada uno**
 
@@ -92,3 +192,8 @@ GROUP BY t.nombre
 HAVING COUNT(d.nifmonitor) > 0:
 
 ![10.png](/Imagenes%2F10.png)
+
+| nombreMonitor | totalClases |  
+|---------------|-------------|  
+| Sandra        | 1           | 
+| Tomas         | 2           | 
