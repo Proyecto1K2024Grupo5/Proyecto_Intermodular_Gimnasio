@@ -102,13 +102,13 @@ INSERT INTO SUPERVISOR (nifSupervisor) VALUES
 INSERT INTO SUPERVISAR (fecha, turno, nifSupervisor, idMusculacion)
 VALUES
 ('2023-12-01', 'MAÑANA', '12345678X', 1),
-('2023-12-01', 'TARDE', '12345678X', 2),
+('2023-12-01', 'TARDE', '24681357W', 2),
 ('2023-12-02', 'MAÑANA', '87654321Y', 3);
 
 -- Insertar datos en DIRIGIR
 INSERT INTO DIRIGIR (fecha, turno, nifMonitor, idClase)
 VALUES
-('2023-12-01', 'MAÑANA', '12345678X', 1),
-('2023-12-01', 'TARDE', '12345678X', 2),
-('2023-12-02', 'MAÑANA', '87654321Y', 3);
+('2023-12-01', 'MAÑANA', '12378945S', 1),
+('2023-12-01', 'TARDE', '78912365Q', 2),
+('2023-12-02', 'MAÑANA', '19283746T', 3);
 
