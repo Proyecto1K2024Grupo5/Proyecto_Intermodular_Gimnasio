@@ -4,7 +4,7 @@
 SELECT nombre, fAlta
 FROM cliente;
 
-![1.png](/Imagenes%2F1.png)
+
 
 | nombre | fAlta |  
 |--------|-------|  
@@ -28,7 +28,7 @@ SELECT nombre, tipoMembresia
 FROM cliente
 WHERE tipoMembresia = 'GOLD'; 
 
-![2.png](/Imagenes%2F2.png)
+
 
 | nombre    | tipoMembresia |  
 |-----------|--------------|  
@@ -46,7 +46,6 @@ SELECT nifMonitor, turno
 FROM dirigir
 WHERE turno = 'TARDE';
 
-![3.png](/Imagenes%2F3.png)
 
 | nifMonitor | turno |  
 |------------|-------|  
@@ -58,7 +57,6 @@ SELECT nifCliente, codGimnasio
 FROM acceso
 WHERE codGimnasio = 3;
 
-![4.png](/Imagenes%2F4.png)
 
 | nifCliente | codGimnasio |  
 |------------|-------------|  
@@ -70,7 +68,6 @@ SELECT nifCliente, codGimnasio, fentrada
 FROM acceso
 WHERE codGimnasio = 3 AND YEAR(fentrada) < 2024;
 
-![5.png](/Imagenes%2F5.png)
 
 | nifCliente | codGimnasio | fentrada   |  
 |------------|-------------|------------|
@@ -86,7 +83,6 @@ SELECT t.nombre, 'supervisor' AS rol
 FROM trabajador t
 JOIN supervisor s ON t.nif = s.nifsupervisor;
 
-![6.png](/Imagenes%2F6.png)
 
 | nombre | rol        |  
 |--------|------------|  
@@ -119,7 +115,6 @@ JOIN reserva r ON c.nif = r.nifcliente
 JOIN sala s ON r.idsala = s.id
 WHERE s.plazas < 25;
 
-![7.png](/Imagenes%2F7.png)
 
 | nombre    | email                 |  
 |-----------|-----------------------|  
@@ -141,7 +136,6 @@ FROM gimnasio g
 JOIN sala s ON g.codigo = s.codgimnasio
 WHERE s.id IS NULL;
 
-![8.png](/Imagenes%2F8.png)
 
 | codigo | nombre                         |  
 |--------|--------------------------------|  
@@ -163,7 +157,6 @@ FROM cliente c
 JOIN acceso a ON c.nif = a.nifCliente
 JOIN gimnasio g ON a.codGimnasio = g.codigo;
 
-![9.png](/Imagenes%2F9.png)
 
 | nombreCliente | nombreGimnasio                 |  
 |---------------|--------------------------------|  
@@ -191,7 +184,6 @@ WHERE YEAR(d.fecha) < 2024
 GROUP BY t.nombre
 HAVING COUNT(d.nifmonitor) > 0:
 
-![10.png](/Imagenes%2F10.png)
 
 | nombreMonitor | totalClases |  
 |---------------|-------------|  
