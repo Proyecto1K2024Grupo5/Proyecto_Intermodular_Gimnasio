@@ -4,6 +4,13 @@
 
 [Click here](https://github.com/Proyecto1K2024Grupo5/Proyecto_Intermodular_Gimnasio/blob/978b390b04345aa34990ee0a13805a721a798d05/Consultas.md)
 
+## DDL
+
+[Click here](https://github.com/Proyecto1K2024Grupo5/Proyecto_Intermodular_Gimnasio/blob/be6f51c62418df38a5484a787af5a0b23c097f8b/DDL_Gimnasio.sql)
+
+## DML 
+[Click here](https://github.com/Proyecto1K2024Grupo5/Proyecto_Intermodular_Gimnasio/blob/be6f51c62418df38a5484a787af5a0b23c097f8b/DML%20Gimnasio.sql)
+
 
 
 
