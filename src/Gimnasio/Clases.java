@@ -4,6 +4,11 @@ public class Clases {
 
     private int codigoClases;
 
+    public Clases(int codigo){
+        this.codigoClases = codigo;
+
+    }
+
 
     public String toJson() {
         StringBuilder jsonBuilder = new StringBuilder();
@@ -20,7 +25,7 @@ public class Clases {
         StringBuilder jsonBuilder = new StringBuilder();
 
         jsonBuilder.append("<Acceso>\n")
-                .append("\t <codigoClases>: ").append(codigoClases).append("</codigoClases>\n")
+                .append("\t <codigoClases>").append(codigoClases).append("</codigoClases>\n")
                 .append("</Acceso>");
 
         return jsonBuilder.toString();

@@ -24,6 +24,8 @@ public class Acceso {
         StringBuilder jsonBuilder = new StringBuilder();
 
         jsonBuilder.append("{\n")
+            .append("\tAcceso: [\n")
+            .append("\t{\n")
             .append("\t \"CodigoGimnasio\": ").append(codigoGimnasio).append(",\n")
             .append("\t \"nifCliente\": ").append(nifCliente).append(",\n")
             .append("\t \"fechaEntrada\": ").append(fechaEntrada).append(",\n")
