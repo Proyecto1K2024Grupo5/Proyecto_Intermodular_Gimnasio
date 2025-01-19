@@ -4,7 +4,7 @@ public class Clases {
 
     private int codigoClases;
 
-    public Clases(int codigo){
+    public Clases(int codigo) {
         this.codigoClases = codigo;
 
     }
@@ -14,7 +14,9 @@ public class Clases {
         StringBuilder jsonBuilder = new StringBuilder();
 
         jsonBuilder.append("{\n")
-                .append("\t \"codigoClases\": ").append(codigoClases).append(",\n")
+                .append("\t\"Clases\": {\n")
+                .append("\t \"CodigoClases\": ").append("\"" + codigoClases + "\"").append(",\n")
+                .append("\t}\n")
                 .append("}");
 
         return jsonBuilder.toString();
@@ -24,9 +26,9 @@ public class Clases {
     public String toXml() {
         StringBuilder jsonBuilder = new StringBuilder();
 
-        jsonBuilder.append("<Acceso>\n")
-                .append("\t <codigoClases>").append(codigoClases).append("</codigoClases>\n")
-                .append("</Acceso>");
+        jsonBuilder.append("<clases>\n")
+                .append("\t <codigo-de-clases>: ").append(codigoClases).append("</codigo-de-gimnasio>\n")
+                .append("</clases>");
 
         return jsonBuilder.toString();
 
