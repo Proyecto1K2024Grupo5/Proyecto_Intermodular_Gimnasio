@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio Markdown.iml" filepath="$PROJECT_DIR$/Ejercicio Markdown.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/Intermodular_UML.iml" filepath="$PROJECT_DIR$/Intermodular_UML.iml" />
+>>>>>>> master
+    </modules>
+  </component>
+</project>
