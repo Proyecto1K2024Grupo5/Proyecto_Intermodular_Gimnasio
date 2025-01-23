@@ -2,11 +2,60 @@ package Gimnasio;
 
 public class Sala {
 
-    private String nifCliente;
-    private int codGimnasio;
-    private int codigo;
-    private int clases;
-    private String horario;
+    protected String nifCliente;
+    protected int codGimnasio;
+    protected int codigo;
+    protected int clases;
+    protected String horario;
+
+
+    public Sala(String nifCliente, int codGimnasio, int codigo, int clases, String horario) {
+        this.nifCliente = nifCliente;
+        this.codGimnasio = codGimnasio;
+        this.codigo = codigo;
+        this.clases = clases;
+        this.horario = horario;
+    }
+
+    public String getNifCliente() {
+        return nifCliente;
+    }
+
+    public void setNifCliente(String nifCliente) {
+        this.nifCliente = nifCliente;
+    }
+
+    public int getCodGimnasio() {
+        return codGimnasio;
+    }
+
+    public void setCodGimnasio(int codGimnasio) {
+        this.codGimnasio = codGimnasio;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getClases() {
+        return clases;
+    }
+
+    public void setClases(int clases) {
+        this.clases = clases;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
 
     public String toXml() {
         StringBuilder jsonBuilder = new StringBuilder();
