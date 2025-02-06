@@ -9,10 +9,10 @@
 
 **Muestra el nombre de los clientes que pertenecen al gimnasio junto a su fecha de alta**
 
+``` sql
 SELECT nombre, fAlta
 FROM cliente;
-
-
+```
 
 | nombre | fAlta |  
 |--------|-------|  
