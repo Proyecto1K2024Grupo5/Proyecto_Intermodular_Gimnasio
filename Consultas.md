@@ -205,13 +205,13 @@ Queremos analizar el numero de veces que han utilizado nuestros gimnasios el pas
 Para ello queremos recuperar el nombre del cliente, su nif, su fecha de nacimiento, el tipo de membresia que tiene contratada
 y el numero de entradas al gimnasio. Ademas queremos dejarlo registrado en una tabla con todos los datos encontrados.
 
-Create table Registro_entradas_clientes_2024 as
-select c.nombre, c.nif, c.fcac, m.tipo as Membresia, count(a.fEntrada) as Entradas_gimnasio from cliente c
-join membresia m on c.tipoMembresia = m.tipo
-join acceso a on c.nif = a.nifCliente
-where c.fnac = year(c.fnac) = 1990
-and year(a.fEntrada) = 2024
-group by c.nif, c.nombre, m.tipo
+Create table Registro_entradas_clientes_2024 as  
+select c.nombre, c.nif, c.fcac, m.tipo as Membresia, count(a.fEntrada) as Entradas_gimnasio from cliente c  
+join membresia m on c.tipoMembresia = m.tipo  
+join acceso a on c.nif = a.nifCliente  
+where c.fnac = year(c.fnac) = 1990  
+and year(a.fEntrada) = 2024  
+group by c.nif, c.nombre, m.tipo  
 order by count(a.fEntrada) desc;
 
 **Resolución de la consulta en SQL**
