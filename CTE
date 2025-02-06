@@ -11,12 +11,12 @@ ORDER BY a.total_accesos DESC;
 
 
 -- Clientes con mas reservas 
-WITH ReservasPorCliente AS (
+WITH ReservaCliente AS (
     SELECT r.nifCliente, COUNT(*) AS total_reservas
     FROM RESERVA r
     GROUP BY r.nifCliente
 )
 SELECT c.nif, c.nombre, c.apellidos, rp.total_reservas
 FROM CLIENTE c
-LEFT JOIN ReservasPorCliente rp ON c.nif = rp.nifCliente
+LEFT JOIN ReservaCliente rp ON c.nif = rp.nifCliente
 ORDER BY rp.total_reservas DESC;
