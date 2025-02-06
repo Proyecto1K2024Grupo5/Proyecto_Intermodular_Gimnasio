@@ -1,0 +1,22 @@
+-- Contar el numero de accesos de los clientes
+WITH contarAccesos AS (
+    SELECT nifCliente, COUNT(*) AS total_accesos
+    FROM `ACCESO`
+    GROUP BY nifCliente
+)
+SELECT c.nif, c.nombre, c.apellidos, a.total_accesos
+FROM `CLIENTE` c
+LEFT JOIN `contarAccesos` a ON c.nif = a.nifCliente
+ORDER BY a.total_accesos DESC;
+
+
+-- Clientes con mas reservas 
+WITH ReservasPorCliente AS (
+    SELECT r.nifCliente, COUNT(*) AS total_reservas
+    FROM RESERVA r
+    GROUP BY r.nifCliente
+)
+SELECT c.nif, c.nombre, c.apellidos, rp.total_reservas
+FROM CLIENTE c
+LEFT JOIN ReservasPorCliente rp ON c.nif = rp.nifCliente
+ORDER BY rp.total_reservas DESC;
